@@ -13,22 +13,42 @@
             <div class="envelope">
                 <div class="letter">
                     <div class="text">
-                        <strong>Dear Person.</strong>
+                        <strong>Dear Luvv❤️.</strong>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Numquam labore omnis minus maiores laboriosam, facere in beatae esse. 
+                            Hi luvv ko, first of all, I want to say that I love you so much. Kahit
+                            LDR tayo, I will always be here for you. always remember luvv mahal na mahal kita. happy 1st monthsary. I hope you like this simple gift. I love you so much😘.
                         </p>
                     </div>
                 </div>
             </div>
-            <div class="heart"></div>
+            <div class="heart" onclick="playAudio(this)"></div>
         </div>
+
+    </div>
+
+    <div class="name">
+        <a href="https://www.facebook.com/share/12JTGsVRkRn/">Jade Formentera</a>
+
+        <p class="your">Your Luvv</p>
     </div>
     <script>
         const envelope = document.querySelector('.envelope-wrapper');
         envelope.addEventListener('click', () => {
             envelope.classList.toggle('flap');
+            playAudio();
         });
+
+
+        const hearst  = new Audio('.//assets/Tahanan_-_Adie__Lyrics_(128k).mp3');
+
+        hearst.controls =false;
+        hearst.preload = 'auto';
+        hearst.style.display = 'none';
+
+        function playAudio() {
+            hearst.play();
+            console.log('Audio is playing');
+        }
     </script>
 </body>
 </html>

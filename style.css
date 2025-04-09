@@ -1,3 +1,8 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Underdog&display=swap');
+
+
+
 :root{
   --primary: #fff;
   --bg-color: rgb(5, 53, 61);
@@ -16,6 +21,7 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
 .container {
   height: 100vh;
@@ -113,3 +119,69 @@ body{
   transform: rotate(90deg);
   transition-delay: 0.4s;
 }
+
+.text p{font-family: "Underdog", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.name{
+ margin-top: -50px;
+ position: relative;
+ height: fit-content;
+ width: fit-content;
+ border-bottom: 2px solid red;
+ 
+}
+
+.name a{
+  text-decoration: none;
+  font-size: 20px;
+  color: cyan;
+  font-family: "Underdog", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.your{
+  font-size: 13px;
+  position: absolute;
+  width: fit-content;
+  height: fit-content;
+  background-color: wheat;
+  border-radius: 3px;
+  padding: 2px;
+  left: 0;
+  top: -40px;
+  animation: animate 1s ease-in-out 0.5s infinite;
+}
+
+.your::after{
+  content: " ";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid wheat;
+  left: 10px;
+  bottom: -5px;
+ 
+}
+
+@keyframes animate {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+  
+}
+
+
+
+
