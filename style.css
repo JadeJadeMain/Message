@@ -121,16 +121,16 @@ body{
 }
 
 .text p{font-family: "Underdog", system-ui;
-  font-weight: 400;
+  font-weight: 700;
   font-style: normal;
 }
 
 .name{
- margin-top: -50px;
+ margin-top: -150px;
  position: relative;
  height: fit-content;
  width: fit-content;
- border-bottom: 2px solid red;
+ 
  
 }
 
